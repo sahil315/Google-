@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.logo{
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  border-radius:50%;
+  border-top:50px solid #ea4335;
+  border-bottom:50px solid #34a583;
+  border-right:50px solid #4285f4;
+  border-left:50px solid  #fbb605;
+  
+  &:before{
+    content:"";
+    position:absolute;
+    top:-121px;
+    left:70px;
+    border-top:100px solid transparent;
+    border-bottom:100px solid transparent;
+    border-right:100px solid #fff;
+    border-left:100px solid  transparent;
+    transform: rotate(90deg);
+  }
+  &:after{
+    content:'';
+    position:absolute;
+    height:50px;
+    width:100px;
+    background:#4285f4;
+    top:50%;
+    right:-50px;
+    transform:translate(0%,-88%);
+    
+  }
+}
